@@ -1,6 +1,6 @@
 node {
       
-      Stage ("Stage1")
+      stage ("Stage1")
       {
       echo "HI"
       }
