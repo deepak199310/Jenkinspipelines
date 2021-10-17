@@ -6,10 +6,10 @@ node {
       }
       stage ("bash cpmmands")
       {
-      sh uptime
+      sh "uptime"
       }
       stage ("bash commands 2")
       {
-      sh pwd
+      sh "pwd"
       }
  }
