@@ -1,15 +1,12 @@
 node {
-      
-      stage ("Stage1")
-      {
-      echo "HI"
-      }
-      stage ("bash cpmmands")
-      {
-      sh "uptime"
-      }
-      stage ("bash commands 2")
-      {
-      sh "pwd"
-      }
- }
+  
+  stage ("cloning from Git")
+  {
+    git "https://github.com/deepak199310/Jenkinspipelines.git"
+  }
+  stage ("running sh script")
+  {
+    sh "./hello.sh"
+  }
+  
+}
