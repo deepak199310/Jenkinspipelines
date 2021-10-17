@@ -4,4 +4,12 @@ node {
       {
       echo "HI"
       }
+      stage ("bash cpmmands")
+      {
+      sh uptime
+      }
+      stage ("bash commands 2")
+      {
+      sh pwd
+      }
  }
